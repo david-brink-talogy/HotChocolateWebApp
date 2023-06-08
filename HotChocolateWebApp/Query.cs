@@ -51,15 +51,15 @@ namespace HotChocolateWebApp
         {
             descriptor
                 .Field(q => q.GetAirports())
-                .UseOffsetPaging(options: new PagingOptions { DefaultPageSize = 25, MaxPageSize = 100, IncludeTotalCount = true })
-                .UseFiltering()
+                //.UseOffsetPaging(options: new PagingOptions { DefaultPageSize = 25, MaxPageSize = 100, IncludeTotalCount = true })
+                //.UseFiltering()
                 .UseSorting()
             ;
 
             descriptor
                 .Field(q => q.GetAirportsSelfSort(default!))
-                .UseOffsetPaging(options: new PagingOptions { DefaultPageSize = 25, MaxPageSize = 100, IncludeTotalCount = true })
-                .UseFiltering()
+                //.UseOffsetPaging(options: new PagingOptions { DefaultPageSize = 25, MaxPageSize = 100, IncludeTotalCount = true })
+                //.UseFiltering()
             ;
         }
     }
